@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello World!
+
+    <form action="https://www.google.com" method="POST">
+        <fieldset>
+            <legend>Name</legend>
+            <label for="fNAme">First Name</label>
+            <input name="firstName" type="text" placeholder="First Name" id="fNAme">
+            
+            <label for="lNAme">Last Name</label>
+            <input name="lastNAme" type="text" value="Last Name" id="lName">
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="cities">City</label>
+            <select id="cities">
+                <optgroup label="NRW">
+                    <option value="Dusseldorf">Dusseldorf</option>
+                    <option value="Neuss">Neuss</option>
+                </optgroup>
+
+                <optgroup label="Berlin">
+                    <option value="Berlin">Berlin</option>
+                </optgroup>
+
+                <optgroup label="Bayarn">
+                    <option value="Munchen">Munchen</option>
+                    <option value="Ulm">Ulm</option>
+                    <option value="Nurnberg">Nurnberg</option>
+                </optgroup>
+            </select>
+
+            <label for="street">Street</label>
+            <input id="street" type="text" minlength="3" maxlength="30">
+
+            <label for="hauseNo">Hause Number</label>
+            <input id="hausNo" type="text">
+
+            <label for="plz">Post Code</label>
+            <input type="number" id="plz" min="10000" max="99999">
+        </fieldset>
+
+        <fieldset>
+            <legend>Account</legend>
+            <label for="mail">e-mail</label>
+            <input name="email" type="email" placeholder="sample@sample.com" id="mail">
+            
+            <label for="pass">Password</label>
+            <input name="pass" type="password" id="pass">
+        </fieldset>
+
+        <!--Best Case-->
+        <input type="submit" value="Let's Go">
+         <!--Worst Case
+        <button>Let's Go</button>
+        <button>Let's Go</button>-->
+         <!--All cases run!!!-->
+    </form>
+</body>
+</html>
