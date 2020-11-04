@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,600&family=PT+Sans&display=swap');
+
+body {
+    min-height: 100vh;
+    background-image: url(./assets/Flat-Mountains.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 10px;
+    background-color: #ffffff96;
+    width:500px;
+    height: 635px;
+    padding-bottom: 20px;
+}
+
+fieldset{
+    border: 1px solid #457b9d;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #457b9d;
+}
+
+label {
+    width: 30%;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    color: #1d3557;
+}
+
+input, #cities {
+    margin-bottom: 10px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid cornflowerblue;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+
+#cities {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("./assets/da.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-image: linear-gradient(90deg, #1d3557, #457b9d);
+    color: white;
+    font-weight: 600;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+}
+
+#register > img {
+    height: 665px;
+}
+
+@media (max-width:993px) {
+    #register > img {
+        display: none;
+    }
+    
+}
